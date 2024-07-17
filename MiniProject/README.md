@@ -22,3 +22,8 @@ df = pd.read_csv("helloWorld.csv")
 ```
 
 If you get stuck, just use the `print()` command to see the output
+
+
+```bash
+ls -a
+```
