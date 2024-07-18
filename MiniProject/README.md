@@ -58,10 +58,17 @@ create or replace TRANSIENT TABLE TECHCATALYST_DE.AZODGE.SONGPLAYS_FACT (
 **Diagram Description**
 : The design below outlines the entire ETL process and data architecture for Sparkify.
 ![dataArchitechtureDiagram](images/Mini%20Music%20Project.jpg)
+---
 
 ## Discussion
+### Discuss the purpose of the Data Lake, and Data Warehouse in context of the startup, Sparkify, and their analytical goals.
+---
+
+---
 
 ## ETL Pipeline
-The ETL process for Sparkify extracts user activity and song data from JSON files in S3, transforms the data by cleaning and normalizing it,  and then reloading it into S3 with structured naming and categorization. Finally, the data is staged and loaded into Snowflake tables for detailed analysis and reporting.
+### State and justify your database schema design and ETL pipeline.
+---
 
-## Summary
+![miniMusicDimModel](images/MiniMusicDimModel.jpg)
+---
