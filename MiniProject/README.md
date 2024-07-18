@@ -60,15 +60,20 @@ create or replace TRANSIENT TABLE TECHCATALYST_DE.AZODGE.SONGPLAYS_FACT (
 ![dataArchitechtureDiagram](images/Mini%20Music%20Project.jpg)
 ---
 
-## Discussion
-### Discuss the purpose of the Data Lake, and Data Warehouse in context of the startup, Sparkify, and their analytical goals.
----
+## Sparkify: Data Lake and Data Warehouse
+A data lake like S3 is useful for a startup like Sparkify because it allows for the economical storage of vast amounts of diverse data like unstructured and structured data. In contrast, a datawarehouse like Snowflake enables Sparkify to efficiently analyze and store structured data. These tools together provide a comprehensive data management solution.
 
 ---
 
 ## ETL Pipeline
 ### State and justify your database schema design and ETL pipeline.
 ---
-
 ![miniMusicDimModel](images/MiniMusicDimModel.jpg)
+
+The ETL process for Sparkify extracts user activity and song data from JSON files in S3, transforms the data by lceaning and normalizt it, and then relopading it into S3 with structured naming and categorization. Finally, teh data is staged and loaded into Snowflkae tables for detailed analysis and reporting.
+
 ---
+
+
+## Summarize your process
+This ETL approach not only ensures high data quality and consistency across different data sources but also enhances Sparkify's analytical capabilities, enabling more sophisticated analysis and reporting. By leveraging cloud-based technologies and strategic data structuring, this pipeline has improved scalability and performance of Sparkify's data management systems.
